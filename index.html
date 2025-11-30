@@ -18,7 +18,7 @@
     <header class="page-header">
         <div class="container header-container">
             <nav class="header-nav">
-                <a class="main-logo" href="./index.html">Web<span class="main-logo-part">Studio</span></a>
+                <a class="main-logo header-logo" href="./index.html">Web<span class="main-logo-part">Studio</span></a>
                 <ul class="nav-list">
                     <li class="nav-list-item first-nav"><a class="nav-list-link current" href="./index.html">Studio</a>
                     </li>
@@ -36,6 +36,68 @@
                     </li>
                 </ul>
             </address>
+            <button class="burger-btn">
+                <svg class="burger-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mobile-menu">
+            <div class="mobile-menu-container container">
+                <button class="close-popup mobile-icon">
+                    <svg class="icon-close" width="8" height="8">
+                        <use href="./images/modal.svg#icon-X"></use>
+                    </svg>
+                </button>
+
+                <nav class="mobile-menu-nav">
+                    <a class="mobile-list-link active" href="./index.html">Studio</a>
+                    <a class="mobile-list-link" href="">Portfolio</a>
+                    <a class="mobile-list-link" href="">Contacts</a>
+                </nav>
+                <address class="menu-contact">
+                    <ul class="menu-contact-list">
+                        <li class="menu-contact-item">
+                            <a class="menu-contact-link active" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                        <li class="menu-contact-item">
+                            <a class="menu-contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </address>
+                <div>
+                    <ul class="mobile-list-icon">
+                        <li class="mobile-icon-item">
+                            <a href="" class="mobile-icon-link" target="_blank">
+                                <svg class="social-icons" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-icon-item">
+                            <a href="" class="mobile-icon-link" target="_blank">
+                                <svg class="social-icons" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-icon-item">
+                            <a href="" class="mobile-icon-link" target="_blank">
+                                <svg class="social-icons" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                                </svg></a>
+                        </li>
+                        <li class="mobile-icon-item">
+                            <a href="" class="mobile-icon-link" target="_blank">
+                                <svg class="social-icons" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -390,7 +452,7 @@
                     marketing &
                     growth solutions.</p>
             </div>
-            <div>
+            <div class="social">
                 <p class="footer-social">Social media</p>
                 <ul class="footer-list-icon">
                     <li class="icon-item">
@@ -443,7 +505,7 @@
     </footer>
 
     <!-- #region popup -->
-    <div class="backdrop is-open">
+    <div class="backdrop is-open hidden">
         <div class="popup">
             <button class="close-popup" type="button">
                 <svg class="icon-close" width="8" height="8">
